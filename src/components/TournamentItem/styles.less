@@ -1,0 +1,36 @@
+@import "../../less/vars.less";
+
+.container {
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  background-color: @gray-dark;
+  height: 78px;
+  margin-top: 10px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  padding: 2px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: @green;
+  transform: rotate(-90deg);
+  font-size: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 9px;
+}
