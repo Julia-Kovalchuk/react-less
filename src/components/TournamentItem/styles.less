@@ -1,11 +1,17 @@
 @import "../../less/vars.less";
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
 .container {
   display: flex;
   width: 100%;
   border-radius: 4px;
   background-color: @sapphire;
-  margin-top: 10px;
 
   &:hover {
     background-color: @sapphire-light;

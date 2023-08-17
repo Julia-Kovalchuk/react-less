@@ -32,7 +32,7 @@ export const tournamentData = [
     name: "Hourly Freeroll",
     pinned: true,
     gameType: "NL OFC/pineapple prg",
-    tags: ["bounty", "proBounty", "bounty", "proBounty"],
+    tags: ["bounty", "proBounty", "time", "freeroll"],
 
     startAt: "12:00 pm, 28 July",
     playersMax: 10000,
@@ -66,7 +66,7 @@ export const tournamentData = [
     prize: 146,
   },
   {
-    id: "5",
+    id: "6",
     status: "registering",
     name: "OFC Pineapple",
     pinned: false,

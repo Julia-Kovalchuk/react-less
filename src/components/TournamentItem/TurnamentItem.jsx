@@ -42,7 +42,7 @@ export const TournamentItem = ({ tournamentData }) => {
   };
 
   return (
-    <div>
+    <ul className={styles.wrapper}>
       {tournamentData.map((item) => {
         const {
           id,
@@ -57,7 +57,7 @@ export const TournamentItem = ({ tournamentData }) => {
           prize,
         } = item;
         return (
-          <div className={styles.container}>
+          <li className={styles.container} key={id}>
             <div
               className={
                 status === "registering"
@@ -74,7 +74,9 @@ export const TournamentItem = ({ tournamentData }) => {
                   <div className={styles.main__tags}>
                     {pinned && <Pin />}
                     <p className={styles.main__gameName}>{gameType}</p>
-                    {tags.map((item) => getTagIcon(item))}
+                    {tags.map((item) => (
+                      <div key={item}>{getTagIcon(item)}</div>
+                    ))}
                   </div>
 
                   <div
@@ -119,9 +121,9 @@ export const TournamentItem = ({ tournamentData }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 };
